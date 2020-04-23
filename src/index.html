@@ -1,11 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Static Site Boilerplate</title>
-    <meta name="description" content="" />
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>The Rice Movement</title>
+    <meta
+      name="description"
+      content="The Rice Movement is an initiative to provide
+        assistance to these hardworking families with support from the community."
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__container">
+        <div class="share">
+          <span class="share__text">Share</span>
+          <hr class="share__hr" />
+          <a
+            href="https://facebook.com"
+            class="share__link--fb"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 0c-1.659 0-3.215.313-4.67.94a12.063 12.063 0 00-3.806 2.564A12.248 12.248 0 00.951 7.312C.317 8.77 0 10.328 0 11.988c0 1.66.317 3.219.951 4.675a12.248 12.248 0 002.573 3.809 12.235 12.235 0 003.805 2.576C8.785 23.683 10.342 24 12 24c1.659 0 3.215-.317 4.67-.952a12.234 12.234 0 003.806-2.576 12.25 12.25 0 002.573-3.809c.634-1.457.951-3.015.951-4.675 0-1.66-.317-3.219-.951-4.676a12.25 12.25 0 00-2.573-3.808A12.063 12.063 0 0016.67.94C15.215.313 13.659 0 12 0zm2.83 8.277h-1.781c-.114 0-.22.065-.317.195a.752.752 0 00-.147.464v1.318h2.244l-.317 1.856h-1.927v5.567h-2.122V12.11H8.537v-1.856h1.926V9.156c0-.782.244-1.453.732-2.015A2.349 2.349 0 0113.05 6.3h1.78v1.978z"
+                fill="#000"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://twitter.com"
+            class="share__link--twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 0c-1.659 0-3.215.313-4.67.94a12.063 12.063 0 00-3.806 2.564A12.248 12.248 0 00.951 7.312C.317 8.77 0 10.328 0 11.988c0 1.66.317 3.219.951 4.675a12.248 12.248 0 002.573 3.809 12.235 12.235 0 003.805 2.576C8.785 23.683 10.342 24 12 24c1.659 0 3.215-.317 4.67-.952a12.234 12.234 0 003.806-2.576 12.25 12.25 0 002.573-3.809c.634-1.457.951-3.015.951-4.675 0-1.66-.317-3.219-.951-4.676a12.25 12.25 0 00-2.573-3.808A12.063 12.063 0 0016.67.94C15.215.313 13.659 0 12 0zm4.878 9.815v.317a6.84 6.84 0 01-.439 2.369 6.734 6.734 0 01-1.293 2.16 6.709 6.709 0 01-2.097 1.575c-.83.407-1.789.61-2.878.61a6.487 6.487 0 01-1.915-.28 7.6 7.6 0 01-1.72-.77c.098 0 .196.005.293.013a4.598 4.598 0 001.866-.256c.496-.18.947-.424 1.354-.733a2.307 2.307 0 01-1.378-.488c-.399-.31-.68-.7-.842-1.172.082.016.159.028.232.036a2.158 2.158 0 00.537-.012c.105-.016.207-.032.304-.049a2.384 2.384 0 01-1.353-.818A2.251 2.251 0 017 10.816v-.025c.163.082.333.147.512.196.18.049.366.081.561.097a2.443 2.443 0 01-.756-.842 2.293 2.293 0 01-.293-1.135c0-.212.029-.42.086-.623.057-.203.134-.394.231-.574a6.965 6.965 0 002.135 1.746 6.413 6.413 0 002.743.745 1.251 1.251 0 01-.06-.281 2.848 2.848 0 01-.013-.256c0-.651.232-1.209.695-1.673a2.277 2.277 0 011.671-.696c.342 0 .659.066.951.196.293.13.553.309.78.537.261-.049.517-.122.77-.22.251-.098.491-.211.719-.342a2.11 2.11 0 01-.39.745c-.18.22-.39.411-.635.574a5.11 5.11 0 00.683-.147c.228-.065.447-.146.659-.244a3.479 3.479 0 01-.525.672 5.132 5.132 0 01-.646.549z"
+                fill="#000"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="logo">
+          <img
+            srcset="images/logo.png, images/logo@2x.png 2x"
+            src="images/logo@2x.png"
+            alt="The Rice Movement Logo"
+            class="logo__img"
+          />
+          <span class="logo__name">
+            The Rice Movement
+          </span>
+        </div>
+        <a href="#donate" class="button">
+          Donate now
+        </a>
+      </div>
+    </nav>
+    <main>
+      <section id="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-offset-1 col-md-10">
+              <h1 class="hero__h1">
+                Hardworking Filipinos lost their jobs. Let’s help them survive
+                as they stay home.
+              </h1>
+            </div>
+          </div>
+        </div>
 
-</body>
+        <a href="#together" class="learn">
+          <span class="learn__text">Learn more</span>
+          <img
+            src="images/arrow-down.svg"
+            class="learn__arrow"
+            alt="Arrow pointing down"
+          />
+        </a>
+      </section>
+      <section id="together">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 together">
+              <h2 class="together__main">
+                #TogetherWeWillRice
+              </h2>
+              <span class="together__float--1">#FightCovid</span>
+              <span class="together__float--2">#TheRiceMovement</span>
+              <span class="together__float--3">#WeHealAsOne</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="cause">
+        <div class="container cause">
+          <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+              <span class="text-label color-black">Our Cause</span>
+              <h2 class="cause__h2">Helping by Providing</h2>
+              <p class="text-body1">
+                Over 1 million Filipinos lost their jobs due to the COVID-19
+                health crisis. Most of them are minimum-wage earners or
+                breadwinners who are now required to stay home without any
+                income to feed their families.
+              </p>
+              <p class="text-body1">
+                If some are forced to go out to look for food, we all lose. We
+                need to help each other stay at home so we can all get this over
+                with.
+              </p>
+              <p class="text-body1">
+                The Rice Movement is an initiative to provide assistance to
+                these hardworking families with support from the community. We
+                are raising funds to buy rice for them to help them survive
+                staying at home at this challenging time.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          srcset="images/our-cause/1.png, images/our-cause/1@2x.png 2x"
+          src="images/our-cause/1@2x.png"
+          class="images__image--1"
+          alt=""
+        />
+
+        <img
+          srcset="images/our-cause/2.png, images/our-cause/2@2x.png 2x"
+          src="images/our-cause/2@2x.png"
+          class="images__image--2"
+          alt=""
+        />
+        <img
+          srcset="images/our-cause/3.png, images/our-cause/3@2x.png 2x"
+          src="images/our-cause/3@2x.png"
+          class="images__image--3"
+          alt=""
+        />
+        <img
+          srcset="images/our-cause/4.png, images/our-cause/4@2x.png 2x"
+          src="images/our-cause/4@2x.png"
+          class="images__image--4"
+          alt=""
+        />
+      </section>
+      <section id="numbers">
+        <span class="numbers__date">As of 21 April, 2020 9:00 pm</span>
+        <div class="container">
+          <div class="row top-xs ">
+            <div class="col-md-offset-1 col-md-5 numbers__col">
+              <img
+                srcset="
+                  images/numbers/raised.png,
+                  images/numbers/raised@2x.png 2x
+                "
+                src="images/numbers/raised@2x.png"
+                class="numbers__icon"
+                alt="Money bill"
+              />
+              <h3 class="numbers__number">P434,585.77</h3>
+              <span class="numbers__label">total funds raised</span>
+            </div>
+            <div class="col-md-5 numbers__col">
+              <img
+                srcset="
+                  images/numbers/sacks.png,
+                  images/numbers/sacks@2x.png 2x
+                "
+                src="images/numbers/sacks@2x.png"
+                class="numbers__icon"
+                alt="Rice Bowl"
+              />
+              <h3 class="numbers__number">246</h3>
+              <span class="numbers__label">sacks of rice delivered</span>
+            </div>
+            <div class="col-md-offset-1 col-md-5 numbers__col">
+              <img
+                srcset="images/numbers/indi.png, images/numbers/indi@2x.png 2x"
+                src="images/numbers/indi@2x.png"
+                class="numbers__icon"
+                alt="Individual"
+              />
+              <h3 class="numbers__number">876</h3>
+              <span class="numbers__label"
+                >individuals who can now survive staying home</span
+              >
+            </div>
+            <div class="col-md-5 numbers__col">
+              <img
+                srcset="
+                  images/numbers/households.png,
+                  images/numbers/households@2x.png 2x
+                "
+                src="images/numbers/households@2x.png"
+                class="numbers__icon"
+                alt="Household"
+              />
+              <h3 class="numbers__number">157</h3>
+              <span class="numbers__label">households helped</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonial">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <img
+                srcset="
+                  images/testimonials/side.png,
+                  images/testimonials/side@2x.png 2x
+                "
+                src="images/testimonials/side@2x.png"
+                class="testimonial__side"
+                alt="Person holding The Rice Movement logo and trucks full of sacks of rice"
+              />
+            </div>
+            <div class="col-md-offset-1 col-md-6">
+              <h4 class="testimonial__name">Benjamin</h4>
+              <span class="text-work color-black20">
+                Displaced Technician and Habal-habal Driver
+              </span>
+              <p class="testimonial__body">
+                “Ni fill up ko ug wala lang ko mo assume kung unsay makuha nako,
+                kay wala man sad silay gisaad nga ihatag…nanawag kalit nako
+                gabii asa daw ko puyo kay naa daw sila ihatag nako karong hapon,
+                so wala lang gihapon mo assume ug nanawag gyud pag hapon ontime
+                kayo sa ilang saad nga time, gitagaan kog 25kgs rice premium
+                ganador, gihatud gyud nila sa akong lugar, na speechless ko uy,
+                d ma drawing akong nawong sa ka grateful nila, ug diha rako
+                kabalo nga ang name nila
+                <span class="testimonial__body--bold"
+                  >#thericemovement #togetherwewillrice</span
+                >
+                a non profit organization, God is Good All the Time”
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="donate">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 header">
+              <img
+                srcset="
+                  images/donations/head.png,
+                  images/donations/head@2x.png 2x
+                "
+                src="images/donations/head@2x.png"
+                class="header__img"
+                alt="Steaming bowl of rice"
+              />
+              <span class="header__hash"
+                >#togetherwewillrice #thericemovement</span
+              >
+              <h1 class="header__h1">
+                Join the movement to help our displaced workers and their
+                families survive
+              </h1>
+              <span class="header__subtext">
+                If you desire to help, please send your donations to any of the
+                following accounts
+              </span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="bank">
+                <div class="bank__head">
+                  <img
+                    srcset="
+                      images/donations/bdo.png,
+                      images/donations/bdo@2x.png 2x
+                    "
+                    src="images/donations/bdo@2x.png"
+                    class="bank__img"
+                    alt="Banco de Oro / BDO"
+                  />
+                  <!-- <span class="bank__view">- Hide Details</span> -->
+                </div>
+                <div class="bank__body">
+                  <div class="bank__half">
+                    <h5 class="bank__h5">Cebu</h5>
+                    <p class="bank__info">123456789</p>
+                    <p class="bank__info">Jessa Marie T Pedrola</p>
+                  </div>
+                  <div class="bank__half">
+                    <h5 class="bank__h5">Cebu</h5>
+                    <p class="bank__info">123456789</p>
+                    <p class="bank__info">Jessa Marie T Pedrola</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="bank">
+                <div class="bank__head">
+                  <img
+                    srcset="
+                      images/donations/bdo.png,
+                      images/donations/bdo@2x.png 2x
+                    "
+                    src="images/donations/bdo@2x.png"
+                    class="bank__img"
+                    alt="Banco de Oro / BDO"
+                  />
+                  <!-- <span class="bank__view">- Hide Details</span> -->
+                </div>
+                <div class="bank__body">
+                  <div class="bank__half">
+                    <h5 class="bank__h5">Cebu</h5>
+                    <p class="bank__info">123456789</p>
+                    <p class="bank__info">Jessa Marie T Pedrola</p>
+                  </div>
+                  <div class="bank__half">
+                    <h5 class="bank__h5">Cebu</h5>
+                    <p class="bank__info">123456789</p>
+                    <p class="bank__info">Jessa Marie T Pedrola</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="bank">
+                <div class="bank__head">
+                  <img
+                    srcset="
+                      images/donations/bdo.png,
+                      images/donations/bdo@2x.png 2x
+                    "
+                    src="images/donations/bdo@2x.png"
+                    class="bank__img"
+                    alt="Banco de Oro / BDO"
+                  />
+                  <!-- <span class="bank__view">- Hide Details</span> -->
+                </div>
+                <div class="bank__body">
+                  <div class="bank__half">
+                    <h5 class="bank__h5">Cebu</h5>
+                    <p class="bank__info">123456789</p>
+                    <p class="bank__info">Jessa Marie T Pedrola</p>
+                  </div>
+                  <div class="bank__half">
+                    <h5 class="bank__h5">Cebu</h5>
+                    <p class="bank__info">123456789</p>
+                    <p class="bank__info">Jessa Marie T Pedrola</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="bank">
+                <div class="bank__head">
+                  <img
+                    srcset="
+                      images/donations/bdo.png,
+                      images/donations/bdo@2x.png 2x
+                    "
+                    src="images/donations/bdo@2x.png"
+                    class="bank__img"
+                    alt="Banco de Oro / BDO"
+                  />
+                  <!-- <span class="bank__view">- Hide Details</span> -->
+                </div>
+                <div class="bank__body">
+                  <div class="bank__half">
+                    <h5 class="bank__h5">Cebu</h5>
+                    <p class="bank__info">123456789</p>
+                    <p class="bank__info">Jessa Marie T Pedrola</p>
+                  </div>
+                  <div class="bank__half">
+                    <h5 class="bank__h5">Cebu</h5>
+                    <p class="bank__info">123456789</p>
+                    <p class="bank__info">Jessa Marie T Pedrola</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="bank">
+                <div class="bank__head">
+                  <img
+                    srcset="
+                      images/donations/bdo.png,
+                      images/donations/bdo@2x.png 2x
+                    "
+                    src="images/donations/bdo@2x.png"
+                    class="bank__img"
+                    alt="Banco de Oro / BDO"
+                  />
+                  <!-- <span class="bank__view">- Hide Details</span> -->
+                </div>
+                <div class="bank__body">
+                  <div class="bank__half">
+                    <h5 class="bank__h5">Cebu</h5>
+                    <p class="bank__info">123456789</p>
+                    <p class="bank__info">Jessa Marie T Pedrola</p>
+                  </div>
+                  <div class="bank__half">
+                    <h5 class="bank__h5">Cebu</h5>
+                    <p class="bank__info">123456789</p>
+                    <p class="bank__info">Jessa Marie T Pedrola</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="bank">
+                <div class="bank__head">
+                  <img
+                    srcset="
+                      images/donations/bdo.png,
+                      images/donations/bdo@2x.png 2x
+                    "
+                    src="images/donations/bdo@2x.png"
+                    class="bank__img"
+                    alt="Banco de Oro / BDO"
+                  />
+                  <!-- <span class="bank__view">- Hide Details</span> -->
+                </div>
+                <div class="bank__body">
+                  <div class="bank__half">
+                    <h5 class="bank__h5">Cebu</h5>
+                    <p class="bank__info">123456789</p>
+                    <p class="bank__info">Jessa Marie T Pedrola</p>
+                  </div>
+                  <div class="bank__half">
+                    <h5 class="bank__h5">Cebu</h5>
+                    <p class="bank__info">123456789</p>
+                    <p class="bank__info">Jessa Marie T Pedrola</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-3 col-md-6 info">
+              <p class="info__liquidation">
+                Please send a screenshot of your donation to our
+                <a href="https://facebook.com" class="info__liquidation--link">
+                  Facebook page
+                </a>
+                for liquidation purposes. We are also posting daily and weekly
+                reports on our page for transparency.
+              </p>
+              <a href="#donate" class="button--light">
+                Donation & Expenses Tracker
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer">
+        <span class="text-learn color-black20">© 2020 The Rice Movement.</span>
+      </footer>
+    </main>
+  </body>
 </html>

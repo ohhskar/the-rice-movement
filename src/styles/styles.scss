@@ -2,3 +2,19 @@
 @import "~sanitize.css";
 @import "~sanitize.css/forms.css";
 @import "~sanitize.css/typography.css";
+@import "base/variable";
+@import "base/mixins";
+@import "base/base";
+@import "base/typography";
+
+@import "~flexboxgrid2";
+
+@import "components/nav";
+@import "components/button";
+@import "components/hero";
+@import "components/together";
+@import "components/cause";
+@import "components/numbers";
+@import "components/testimonial";
+@import "components/donate";
+@import "components/footer";

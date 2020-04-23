@@ -1,0 +1,43 @@
+.button {
+  @extend .color-white;
+  @extend .text-button;
+  background-color: var(--color-off-black);
+  border-radius: 1000px;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  transition: 0.1s ease background-color, 0.1s ease transform;
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    background-color: var(--color-black20);
+  }
+
+  &:active {
+    outline: 0;
+    transform: scale(0.95);
+  }
+
+  &--light {
+    @extend .color-black;
+    @extend .text-button;
+    border: solid 2px var(--color-black10);
+    border-radius: 1000px;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    transition: 0.1s ease background-color, 0.1s ease transform;
+
+    margin-top: 2rem;
+    display: inline-block;
+    &:hover,
+    &:focus {
+      outline: 0;
+      background-color: var(--color-black10);
+    }
+
+    &:active {
+      outline: 0;
+      transform: scale(0.95);
+    }
+  }
+}

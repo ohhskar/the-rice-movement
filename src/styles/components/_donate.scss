@@ -1,0 +1,94 @@
+#donate {
+  width: 100%;
+  margin: 15rem 0 6.25rem;
+
+  .header {
+    text-align: center;
+    margin-bottom: 5rem;
+
+    &__img {
+      width: 8.75rem;
+      margin-bottom: 2.5rem;
+    }
+
+    &__hash {
+      @extend .text-label;
+      @extend .color-black;
+      display: block;
+    }
+
+    &__h1 {
+      @extend .color-off-black;
+      margin: 0.75 0 1.25rem;
+    }
+
+    &__subtext {
+      @extend .text-subtext;
+      @extend .color-black;
+    }
+  }
+
+  .bank {
+    background-color: var(--color-gray);
+    border-radius: 1.25rem;
+    padding: 2.5rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+
+    &__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__view {
+      @extend .text-subtext;
+      &--hide {
+        @extend .color-black;
+      }
+      &--view {
+        @extend .color-black20;
+      }
+    }
+
+    &__body {
+      padding-top: 3.125rem;
+      display: flex;
+      overflow: hidden;
+    }
+
+    &__half {
+      width: 50%;
+    }
+
+    &__h5 {
+      @extend .text-location;
+      @extend .color-black;
+      margin: 0;
+    }
+    &__info {
+      @extend .text-subtext;
+      @extend .color-black;
+      margin: 0;
+    }
+  }
+
+  .info {
+    margin-top: 7.5rem;
+    text-align: center;
+
+    &__liquidation {
+      @extend .text-subtext;
+      @extend .color-black;
+      &--link {
+        @extend .color-black;
+        transition: 0.1s ease color;
+
+        &:hover,
+        &:focus {
+          @extend .color-black20;
+        }
+      }
+    }
+  }
+}

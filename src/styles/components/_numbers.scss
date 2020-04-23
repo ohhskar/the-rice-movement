@@ -1,0 +1,40 @@
+#numbers {
+  width: 100%;
+  margin: 12.5rem 0 5rem;
+
+  .numbers {
+    &__col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 7.5rem;
+    }
+
+    &__icon {
+      height: 2.5rem;
+    }
+
+    &__number {
+      @extend .text-numbers;
+      @extend .color-black;
+      margin: 1rem 0;
+      text-align: center;
+    }
+
+    &__label {
+      @extend .text-label;
+      @extend .color-black;
+      width: 60%;
+      text-align: center;
+    }
+
+    &__date {
+      @extend .text-label;
+      @extend .color-black;
+      text-align: center;
+      display: block;
+      margin-bottom: 3.75rem;
+    }
+  }
+}

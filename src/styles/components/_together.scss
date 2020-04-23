@@ -1,0 +1,60 @@
+#together {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .together {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &__main {
+      @extend .text-big-hash;
+      @extend .color-black;
+      text-align: center;
+    }
+
+    &__float {
+      @extend .text-hash;
+      @extend .color-black20;
+      position: absolute;
+
+      &--1 {
+        @extend .together__float;
+        left: 14rem;
+        bottom: 2rem;
+
+        @include breakpoint(lg) {
+          left: 2rem;
+        }
+
+        @include breakpoint(sm) {
+          bottom: 1rem;
+        }
+      }
+
+      &--2 {
+        @extend .together__float;
+        top: 1rem;
+        transform: rotate(-2.27deg);
+      }
+      &--3 {
+        @extend .together__float;
+        right: 17rem;
+        bottom: 2rem;
+        transform: rotate(-2.35deg);
+
+        @include breakpoint(lg) {
+          right: 2rem;
+        }
+
+        @include breakpoint(sm) {
+          bottom: 1rem;
+        }
+      }
+    }
+  }
+}

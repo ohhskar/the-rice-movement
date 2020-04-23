@@ -40,8 +40,8 @@
 @font-face {
   font-family: "Sniglet";
   src: url("../fonts/Sniglet-Regular.woff2") format("woff2"),
-    url("../fonts/SnigletRegular.woff") format("woff"),
-    url("../fonts/SnigletRegular.ttf") format("truetype");
+    url("../fonts/Sniglet-Regular.woff") format("woff"),
+    url("../fonts/Sniglet-Regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
 }
@@ -76,6 +76,14 @@
     "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue",
     Helvetica, Arial, sans-serif;
   font-weight: 400;
+}
+
+%balboa-medium {
+  font-family: "Balboa", Frutiger, "Frutiger Linotype", Univers, Calibri,
+    "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed",
+    "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 
 h1 {
@@ -122,19 +130,53 @@ h2 {
   font-size: 1.25rem;
 }
 
+.text-big-hash {
+  @extend %balboa-medium;
+  font-size: 7.5rem;
+  text-transform: uppercase;
+
+  @include breakpoint(xl) {
+    font-size: 8.5vw;
+  }
+
+  @include breakpoint(sm) {
+    font-size: 3.25rem;
+  }
+}
 .text-hash {
   @extend .text-label;
   letter-spacing: 0.02em;
+
+  @include breakpoint(md) {
+    font-size: 1.6rem;
+  }
 }
 
-.text-footer {
+.text-learn {
   @extend %sniglet-regular;
   font-size: 0.75rem;
+
+  @include breakpoint(md) {
+    font-size: 1.25rem;
+  }
 }
 
 .text-button {
   @extend %circular-pro-book;
   font-size: 1rem;
+}
+
+.text-name {
+  @extend %circular-pro-bold;
+  font-size: 1rem;
+  line-height: 1.5em;
+  letter-spacing: 0.0015em;
+}
+
+.text-work {
+  @extend %circular-pro-book;
+  font-size: 0.875rem;
+  line-height: 1.7em;
 }
 
 .text-share {
@@ -143,6 +185,23 @@ h2 {
   line-height: 1rem;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+}
+
+.text-subtext {
+  @extend %circular-pro-book;
+  font-size: 1rem;
+  line-height: 2em;
+}
+
+.text-location {
+  @extend %circular-pro-bold;
+  font-size: 1rem;
+  line-height: 2em;
+}
+
+.text-logo {
+  @extend %circular-pro-medium;
+  font-size: 1.375rem;
 }
 
 .color-black {
@@ -155,4 +214,8 @@ h2 {
 
 .color-black20 {
   color: var(--color-black20);
+}
+
+.color-white {
+  color: var(--color-white);
 }

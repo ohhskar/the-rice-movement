@@ -1,0 +1,83 @@
+.nav {
+  width: 100vw;
+  height: 10rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 200;
+
+  &__container {
+    width: 100%;
+    height: 6.25rem;
+
+    padding: 1.125rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .share {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include breakpoint(sm) {
+      display: none;
+    }
+
+    &__text {
+      @extend .text-share;
+      @extend .color-black;
+    }
+
+    &__hr {
+      @extend .color-black;
+      width: 2rem;
+      height: 0.0625rem;
+      border: 0;
+      background-color: currentColor;
+
+      margin: 0 0.75rem;
+    }
+
+    &__link {
+      transition: 0.1s ease transform;
+      path {
+        transition: 0.1s ease fill;
+      }
+
+      &:active {
+        outline: 0;
+        transform: scale(0.95);
+      }
+
+      &--fb {
+        @extend .share__link;
+        margin-right: 0.75rem;
+        path:hover {
+          fill: #4267b2;
+        }
+      }
+
+      &--twitter {
+        @extend .share__link;
+        path:hover {
+          fill: #08a0e9;
+        }
+      }
+    }
+  }
+
+  .logo {
+    &__img {
+      height: 2rem;
+      mix-blend-mode: multiply;
+      margin-right: 0.75rem;
+    }
+
+    &__name {
+      @extend .text-logo;
+      @extend .color-off-black;
+    }
+  }
+}

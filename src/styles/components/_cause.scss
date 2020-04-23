@@ -1,0 +1,102 @@
+#cause {
+  width: 100%;
+  padding: 15rem 0;
+  text-align: center;
+  position: relative;
+
+  @include breakpoint(lg) {
+    padding: 20rem 0 30rem;
+  }
+
+  .cause {
+    position: relative;
+    &__h2 {
+      @extend .color-black;
+      position: relative;
+      margin: 0 0 2.5rem;
+
+      &:after {
+        content: "";
+        width: 100%;
+        height: 3.125rem;
+        position: absolute;
+        left: 0;
+        bottom: -1rem;
+        background-image: url("../images/stroke.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: bottom center;
+      }
+    }
+  }
+  .images {
+    &__image {
+      position: absolute;
+      &--1 {
+        @extend .images__image;
+        width: 20.625rem;
+        top: 1rem;
+        left: 4vw;
+        @include breakpoint(lg) {
+          left: -8vw;
+          top: -4rem;
+        }
+
+        @include breakpoint(md) {
+          width: 50vw;
+        }
+
+        @include breakpoint(sm) {
+          top: 0;
+        }
+      }
+      &--2 {
+        @extend .images__image;
+        width: 21.875rem;
+        top: 0;
+        right: 8vw;
+        @include breakpoint(lg) {
+          right: -6vw;
+          top: -3rem;
+        }
+        @include breakpoint(md) {
+          width: 40vw;
+        }
+        @include breakpoint(sm) {
+          top: 0;
+        }
+      }
+
+      &--3 {
+        @extend .images__image;
+        width: 25rem;
+        left: 0;
+        bottom: 0;
+        @include breakpoint(xl) {
+          bottom: -12rem;
+        }
+
+        @include breakpoint(lg) {
+          width: 40vw;
+          bottom: -4rem;
+        }
+        @include breakpoint(sm) {
+          width: 50vw;
+        }
+      }
+
+      &--4 {
+        @extend .images__image;
+        width: 20rem;
+        right: 0;
+        bottom: 8rem;
+        @include breakpoint(xl) {
+          bottom: 5rem;
+        }
+        @include breakpoint(sm) {
+          width: 50vw;
+        }
+      }
+    }
+  }
+}
