@@ -15,7 +15,7 @@ const config = {
   site_description: 'The Rice Movement is an initiative to provide assistance to hard working families by support from the community.',
 
   // Your website's URL, used for sitemap
-  site_url: '',
+  site_url: 'https://thericemovement.com',
 
   // Google Analytics tracking ID (leave blank to disable)
   googleAnalyticsUA: '',
