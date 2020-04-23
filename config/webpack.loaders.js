@@ -94,7 +94,7 @@ const less = {
 const images = {
   test: /\.(gif|png|jpe?g|svg)$/i,
   exclude: /fonts/,
-  use: ['file-loader?name=images/[name].[hash].[ext]'].filter(Boolean),
+  use: ['file-loader?name=images/[name].[ext]'].filter(Boolean),
 };
 
 // Font loaders
