@@ -9,10 +9,10 @@ if (!ROOT) {
 
 const config = {
   // Your website's name, used for favicon meta tags
-  site_name: 'Static Site Boilerplate',
+  site_name: 'The Rice Project',
 
   // Your website's description, used for favicon meta tags
-  site_description: 'A modern boilerplate for static website development',
+  site_description: 'The Rice Movement is an initiative to provide assistance to hard working families by support from the community.',
 
   // Your website's URL, used for sitemap
   site_url: '',

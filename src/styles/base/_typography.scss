@@ -1,2 +1,158 @@
 // font-face rules. Do not forget to include font-display: swap in all rules
 // Overrides all default text styles
+
+@font-face {
+  font-family: "Circular Pro";
+  src: url("../fonts/CircularPro-Bold.woff2") format("woff2"),
+    url("../fonts/CircularPro-Bold.woff") format("woff"),
+    url("../fonts/CircularPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Circular Pro";
+  src: url("../fonts/CircularPro-Medium.woff2") format("woff2"),
+    url("../fonts/CircularPro-Medium.woff") format("woff"),
+    url("../fonts/CircularPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Circular Pro";
+  src: url("../fonts/CircularPro-Book.woff2") format("woff2"),
+    url("../fonts/CircularPro-Book.woff") format("woff"),
+    url("../fonts/CircularPro-Book.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Balboa";
+  src: url("../fonts/Balboa-Medium.woff2") format("woff2"),
+    url("../fonts/Balboa-Medium.woff") format("woff"),
+    url("../fonts/Balboa-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sniglet";
+  src: url("../fonts/Sniglet-Regular.woff2") format("woff2"),
+    url("../fonts/SnigletRegular.woff") format("woff"),
+    url("../fonts/SnigletRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+%sniglet-regular {
+  font-family: "Sniglet", Frutiger, "Frutiger Linotype", Univers, Calibri,
+    "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed",
+    "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+%circular-pro-bold {
+  font-family: "Circular Pro", Frutiger, "Frutiger Linotype", Univers, Calibri,
+    "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed",
+    "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+%circular-pro-medium {
+  font-family: "Circular Pro", Frutiger, "Frutiger Linotype", Univers, Calibri,
+    "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed",
+    "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+%circular-pro-book {
+  font-family: "Circular Pro", Frutiger, "Frutiger Linotype", Univers, Calibri,
+    "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed",
+    "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  @extend %circular-pro-bold;
+  font-size: 3.25rem;
+  line-height: 4.5rem;
+  letter-spacing: -0.005em;
+}
+
+h2 {
+  @extend %circular-pro-bold;
+  font-size: 3rem;
+  line-height: 5rem;
+  letter-spacing: -0.005em;
+}
+
+.text-numbers {
+  @extend %circular-pro-bold;
+  font-size: 4rem;
+  line-height: 5rem;
+  letter-spacing: -0.005em;
+}
+
+.text-body1 {
+  @extend %circular-pro-book;
+  font-size: 1.125rem;
+  line-height: 2.5rem;
+}
+
+.text-body2 {
+  @extend %circular-pro-book;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.text-blurb {
+  @extend %circular-pro-book;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+
+.text-label {
+  @extend %sniglet-regular;
+  font-size: 1.25rem;
+}
+
+.text-hash {
+  @extend .text-label;
+  letter-spacing: 0.02em;
+}
+
+.text-footer {
+  @extend %sniglet-regular;
+  font-size: 0.75rem;
+}
+
+.text-button {
+  @extend %circular-pro-book;
+  font-size: 1rem;
+}
+
+.text-share {
+  @extend %circular-pro-bold;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.color-black {
+  color: var(--color-black);
+}
+
+.color-off-black {
+  color: var(--color-off-black);
+}
+
+.color-black20 {
+  color: var(--color-black20);
+}
