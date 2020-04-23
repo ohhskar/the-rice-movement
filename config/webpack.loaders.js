@@ -9,7 +9,7 @@ const html = {
   test: /\.(html)$/,
   use: [
     {
-      loader: 'html-loader',
+      loader: 'html-loader-srcset',
       options: {
         interpolate: true,
       },
@@ -94,7 +94,7 @@ const less = {
 const images = {
   test: /\.(gif|png|jpe?g|svg)$/i,
   exclude: /fonts/,
-  use: ['file-loader?name=images/[name].[ext]'].filter(Boolean),
+  use: ['file-loader?name=images/[name].[hash].[ext]'].filter(Boolean),
 };
 
 // Font loaders
