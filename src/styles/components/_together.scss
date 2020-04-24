@@ -15,6 +15,38 @@
       @extend .text-big-hash;
       @extend .color-black;
       text-align: center;
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      padding-left: 4.5rem;
+
+      @include breakpoint(xl) {
+        padding-left: calc(4.5vw + 0.5rem);
+      }
+
+      @include breakpoint(sm) {
+        padding-left: 2.25rem;
+      }
+      &:before {
+        position: absolute;
+        content: "";
+        width: 4rem;
+        height: 1em;
+        background: url(../images/hash.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        left: 0;
+
+        @include breakpoint(xl) {
+          width: 4.5vw;
+        }
+
+        @include breakpoint(sm) {
+          width: 2rem;
+        }
+      }
     }
 
     &__float {
