@@ -46,16 +46,29 @@
 
     &__view {
       @extend .text-subtext;
+      color: var(--color-black20);
+      transition: 0.1s ease color, 0.1s ease transform;
+      cursor: pointer;
+      border: 0;
+
       &--hide {
-        @extend .color-black;
+        color: var(--color-black);
       }
-      &--view {
-        @extend .color-black20;
+
+      &:hover,
+      &:focus {
+        outline: 0;
+        color: var(--color-black);
+      }
+
+      &:active {
+        outline: 0;
+        transform: scale(0.95);
       }
     }
 
     &__body {
-      padding-top: 3.125rem;
+      height: 0;
       display: flex;
       overflow: hidden;
     }
