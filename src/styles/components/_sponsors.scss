@@ -1,0 +1,43 @@
+#sponsors {
+  width: 100%;
+  margin: 30vh 0;
+  text-align: center;
+  .sponsors {
+    &__col {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 3rem;
+      row-gap: 3rem;
+      justify-items: center;
+      align-items: center;
+      margin-top: 5rem;
+
+      overflow: hidden;
+      @include breakpoint(md) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    &__label {
+      @extend .text-label;
+      @extend .color-black;
+      width: 60%;
+      text-align: center;
+    }
+
+    &__image {
+      width: 100%;
+      padding: 2rem;
+      filter: grayscale(100%);
+      transition: 1s ease filter;
+      &:hover,
+      &:focus {
+        filter: grayscale(0%);
+      }
+
+      &--sos {
+        @extend .sponsors__image;
+        filter: grayscale(100%) invert(100%);
+      }
+    }
+  }
+}

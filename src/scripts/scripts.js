@@ -5,7 +5,7 @@ class BankToggler {
     this.parent = element;
     this.toggler = element.querySelector('.bank__view');
     this.body = element.querySelector('.bank__body');
-    this.defaultDuration = 0.25;
+    this.defaultDuration = 0.75;
     this.defaultEase = 'power1.out';
   }
 
@@ -44,6 +44,15 @@ class BankToggler {
     this.toggler.addEventListener('click', () => this.toggle());
   }
 }
+
+const marquee = document.querySelector('.sponsors__marquee');
+
+gsap.to(marquee, {
+  xPercent: -100,
+  ease: 'linear',
+  repeat: -1,
+  duration: 20,
+});
 
 const initializeAnimation = () => {
   const bankNodes = document.querySelectorAll('.bank');

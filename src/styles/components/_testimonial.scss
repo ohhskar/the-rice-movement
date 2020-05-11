@@ -1,6 +1,6 @@
 #testimonial {
   width: 100%;
-  margin: 5rem 0;
+  margin: 30vh 0;
   text-align: center;
 
   .testimonial {
@@ -14,13 +14,13 @@
     &__name {
       @extend .text-name;
       @extend .color-black;
-      margin: 0;
+      margin: 2.5rem 0 0;
     }
 
     &__body {
       @extend .text-body1;
       @extend .color-black;
-      margin: 1.5rem 0 0;
+      margin: 2.5rem 0 0;
       &--bold {
         font-weight: 700;
       }
