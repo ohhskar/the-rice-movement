@@ -41,9 +41,9 @@
     }
 
     &__link {
-      transition: 0.1s ease transform;
+      transition: 0.5s ease transform;
       path {
-        transition: 0.1s ease fill;
+        transition: 0.5s ease fill;
       }
 
       &:active {

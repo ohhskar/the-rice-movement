@@ -28,10 +28,15 @@
       width: 100%;
       padding: 2rem;
       filter: grayscale(100%);
-      transition: 0.1s ease filter;
+      transition: 1s ease filter;
       &:hover,
       &:focus {
         filter: grayscale(0%);
+      }
+
+      &--sos {
+        @extend .sponsors__image;
+        filter: grayscale(100%) invert(100%);
       }
     }
   }

@@ -5,7 +5,7 @@ class BankToggler {
     this.parent = element;
     this.toggler = element.querySelector('.bank__view');
     this.body = element.querySelector('.bank__body');
-    this.defaultDuration = 0.25;
+    this.defaultDuration = 0.75;
     this.defaultEase = 'power1.out';
   }
 
