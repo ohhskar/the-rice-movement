@@ -45,6 +45,15 @@ class BankToggler {
   }
 }
 
+const marquee = document.querySelector('.sponsors__marquee');
+
+gsap.to(marquee, {
+  xPercent: -100,
+  ease: 'linear',
+  repeat: -1,
+  duration: 20,
+});
+
 const initializeAnimation = () => {
   const bankNodes = document.querySelectorAll('.bank');
   const bankObjects = [...bankNodes].map((element) => new BankToggler(element));
